@@ -9,13 +9,16 @@ export class ServersComponent implements OnInit {
 allowNewServer = false;
 serverCreationStatus =  "Server was not Created";
 serverName = "Test Server";
+serverCreated = false;
 
 // Event Binding
 onCreateServer() {
-  this.serverCreationStatus = "Server was Created"
+  this.serverCreated = true;
+  this.serverCreationStatus = "Server was Created "+ this.serverName;
 }
 
 onUpdateServerName(event : Event){
+
   this.serverName =(<HTMLInputElement>event.target).value;
 }
 
