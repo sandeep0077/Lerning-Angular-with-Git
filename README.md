@@ -1,27 +1,53 @@
-# MyFirstApp
+🤞👌 DIRECTIVES 👌🤞
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+We're almost done with the basics about Angular,
 
-## Development server
+we learned a lot about components, the basic building block of any Angular app, about how it starts the
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+app, how we can communicate with our templates in our components so that we can output data or react
 
-## Code scaffolding
+to events,
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+now there is one other key building block you probably use in any Angular app you build, directives.
 
-## Build
+What are directives? Directives are instructions in the DOM
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+and we actually already use directives without knowing it,
 
-## Running unit tests
+components are kind of such instructions in the DOM. Once we place the selector of our component somewhere
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+in our templates,
 
-## Running end-to-end tests
+at this point of time we're instructing Angular to add the content of our component template and the
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+business logic in our TypeScript code in this place where we use the selector.
 
-## Further help
+This was our instruction, Angular
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+please add our component in this place and indeed components are directives but directives with a template,
+
+there are also directives without a template.
+
+So an example would be the appTurnGreen directive which would be a custom directive we could build.
+
+We typically add directives with an attributes selector
+
+but technically the selector of a directive can be configured just like the selector of a component,
+
+so you could also use CSS classes or the elements style
+
+but again typically use the attribute style
+
+and on this paragraph, this directive might simply color the text green you could say. So Angular would
+
+find this instruction, here we would have defined our directive with the directive decorator to inform
+
+Angular that this class holds a directive
+
+and there, we might have the logic to turn this green.
+
+Now we will learn how to write our own directives in the section focused on directives in this course
+
+but there are a couple of built-in directives which are really useful.
+
+Let's take a closer look at how we use them and what they do for us in the next lectures.
